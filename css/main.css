@@ -83,12 +83,38 @@ img {
 }
 
 .NFT__img {
-  width: 95%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   border-radius: 15px;
   margin-top: 5px;
+  background: url("./../../images/image-equilibrium.jpg") no-repeat top center;
+  width: 320px;
+  height: 320px;
+  background-size: contain;
+}
+
+.NFT__img:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 255, 247, 0.507)), to(rgba(0, 255, 247, 0.507))), url("./../../images/image-equilibrium.jpg") no-repeat top center;
+  background: linear-gradient(to top, rgba(0, 255, 247, 0.507), rgba(0, 255, 247, 0.507)), url("./../../images/image-equilibrium.jpg") no-repeat top center;
+  background-size: cover;
+}
+
+.NFT__img:hover::before {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: url("./../../images/icon-view.svg") no-repeat center center;
 }
 
 .NFT__name {
