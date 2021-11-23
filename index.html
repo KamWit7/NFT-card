@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <ul class="NFT">
+      <li class="NFT__flex">
+        <img
+          class="NFT__img"
+          src="./images/image-equilibrium.jpg"
+          alt="Equilibrium"
+        />
+        <div class="wrapper">
+          <h1 class="NFT__name">Equilibrium #3429</h1>
+          <p class="NFT__description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <ul class="price-list wrapper">
+          <li>
+            <div class="NFT__curent-price">0.041 ETH</div>
+          </li>
+          <li>
+            <div class="NFT__days">3 days left</div>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <svg class="svg-line">
+          <line x1="0" y1="0" x2="380" y2="0" />
+        </svg>
+      </li>
+
+      <li class="wrapper">
+        <div class="NFT__creator">Creation of <span>Jules Wyvern</span></div>
+      </li>
+    </ul>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.<br />Coded by
+      <a href="https://github.com/KamWit7" target="_blank">Kamil Witkokwski</a>.
+    </div>
+  </body>
+</html>
